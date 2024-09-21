@@ -426,7 +426,7 @@ lazy val scala_libraries = (project in file("scala-libraries"))
       log4jApiScalaDep,
       "org.apache.logging.log4j" % "log4j-core" % "2.24.0" % Runtime,
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
-      "software.amazon.awssdk" % "s3" % "2.25.9",
+      "software.amazon.awssdk" % "s3" % "2.25.70",
       "com.github.seratch" %% "awscala" % "0.9.2"
     ),
     libraryDependencies ++= Seq(
