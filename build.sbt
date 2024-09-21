@@ -562,8 +562,8 @@ lazy val scala_libraries_testing = (project in file("scala-libraries-testing"))
       "com.lihaoyi" %% "utest" % "0.8.4" % "test",
       munitDep,
       "com.amazonaws" % "aws-java-sdk-s3" % "1.12.772" % IntegrationTest,
-      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.41.3" % IntegrationTest,
-      "com.dimafeng" %% "testcontainers-scala-localstack-v2" % "0.41.3" % IntegrationTest,
+      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.41.4" % IntegrationTest,
+      "com.dimafeng" %% "testcontainers-scala-localstack-v2" % "0.41.4" % IntegrationTest,
       "software.amazon.awssdk" % "s3" % "2.27.24"
     ),
     Defaults.itSettings,
