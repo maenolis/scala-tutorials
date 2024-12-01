@@ -1,5 +1,5 @@
 //> using scala 3.4.2
-//> using dep com.lihaoyi::os-lib:0.10.1
+//> using dep com.lihaoyi::os-lib:0.10.7
 package com.baeldung.scalacli
 import os._
 
