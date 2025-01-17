@@ -176,7 +176,7 @@ lazy val scala_core_dates =
       scalaVersion := scala3Version,
       libraryDependencies ++= scalaTestDeps,
       libraryDependencies += "joda-time" % "joda-time" % "2.13.0",
-      libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.34.0",
+      libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "3.0.0",
       libraryDependencies += "com.typesafe" % "config" % "1.4.3"
     )
 
@@ -529,7 +529,7 @@ lazy val nscalatime = (project in file("scala-libraries-standalone/nscalatime"))
   .settings(
     name := "nscalatime",
     scalaVersion := scala3Version,
-    libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.34.0",
+    libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "3.0.0",
     libraryDependencies ++= scalaTestDeps
   )
 
@@ -602,7 +602,7 @@ lazy val scala_libraries_persistence =
         doobieCore,
         doobiePGDep,
         "org.reactivemongo" %% "reactivemongo" % reactiveMongo,
-        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude("org.scala-lang.modules", "scala-parser-combinators_2.13"),
+        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude ("org.scala-lang.modules", "scala-parser-combinators_2.13"),
         "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % embedMongoVersion % IntegrationTest,
         logback,
         "com.typesafe.slick" %% "slick-hikaricp" % slickVersion,
