@@ -602,7 +602,7 @@ lazy val scala_libraries_persistence =
         doobieCore,
         doobiePGDep,
         "org.reactivemongo" %% "reactivemongo" % reactiveMongo,
-        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude("org.scala-lang.modules", "scala-parser-combinators_2.13"),
+        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude ("org.scala-lang.modules", "scala-parser-combinators_2.13"),
         "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % embedMongoVersion % IntegrationTest,
         logback,
         "com.typesafe.slick" %% "slick-hikaricp" % slickVersion,
@@ -733,7 +733,7 @@ lazy val zio3 = (project in file("zio3"))
     run / fork := true
   )
 
-val doobieVersion = "1.0.0-RC2"
+val doobieVersion = "1.0.0-RC7"
 
 val doobiePGDep = "org.tpolecat" %% "doobie-postgres" % doobieVersion
 val doobieCore = "org.tpolecat" %% "doobie-core" % doobieVersion
