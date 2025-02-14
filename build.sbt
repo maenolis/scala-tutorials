@@ -602,7 +602,7 @@ lazy val scala_libraries_persistence =
         doobieCore,
         doobiePGDep,
         "org.reactivemongo" %% "reactivemongo" % reactiveMongo,
-        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude("org.scala-lang.modules", "scala-parser-combinators_2.13"),
+        "org.reactivemongo" %% "reactivemongo-akkastream" % reactiveMongo exclude ("org.scala-lang.modules", "scala-parser-combinators_2.13"),
         "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % embedMongoVersion % IntegrationTest,
         logback,
         "com.typesafe.slick" %% "slick-hikaricp" % slickVersion,
@@ -678,7 +678,7 @@ lazy val cats_effects = (project in file("cats-effects"))
     libraryDependencies += "junit" % "junit" % "4.13.2" % Test
   )
 
-val zioJsonDep = "dev.zio" %% "zio-json" % "0.7.3"
+val zioJsonDep = "dev.zio" %% "zio-json" % "0.7.20"
 val zioTestSbt = "dev.zio" %% "zio-test-sbt" % zioVersion % Test
 
 lazy val zio = (project in file("zio"))
@@ -700,7 +700,7 @@ lazy val zio2 = (project in file("zio-2"))
     name := "zio-2",
     scalaVersion := scala3Version,
     libraryDependencies += "dev.zio" %% "zio" % zioVersion,
-    libraryDependencies += "dev.zio" %% "zio-json" % "0.7.3",
+    libraryDependencies += "dev.zio" %% "zio-json" % "0.7.20",
     libraryDependencies += "dev.zio" %% "zio-test" % zioVersion % Test,
     libraryDependencies += "dev.zio" %% "zio-test-sbt" % zioVersion % Test,
     libraryDependencies += "dev.zio" %% "zio-logging" % "2.1.17",
